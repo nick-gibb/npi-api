@@ -10,6 +10,6 @@ RUN pip install gunicorn
 
 COPY . /app
 
-EXPOSE 8050
+EXPOSE 80
 
-CMD ["gunicorn", "-b", ":8050", "app:app"]  
+CMD ["gunicorn", "-b", ":80", "app:app"]  
